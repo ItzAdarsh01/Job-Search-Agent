@@ -17,22 +17,22 @@ Main flow starts from job_agent.py (line 56).
 
 Files
 
-job_agent.py (line 1)
+job_agent.py 
 
 This is the main controller/orchestrator. It connects scraper, AI, and mailer.
 
-scraper.py (line 1)
+scraper.py 
 
 This opens LinkedIn using Playwright and collects job title, company, and link.
 
-main.py (line 1)
+main.py 
 
 This connects your project with local Ollama AI model phi3.
 
-mailer.py (line 1)
+mailer.py 
 
 This sends the AI-generated job analysis to email using Gmail SMTP.
 
-run_bot.bat (line 1)
+run_bot.bat 
 
 This is a Windows shortcut script to activate the environment and run the bot.
