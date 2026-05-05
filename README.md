@@ -8,10 +8,10 @@ Project Purpose
 This is a job automation bot. Its job is:
 
 Search jobs from LinkedIn.
-Pick top job links.
-Send those jobs to local AI model phi3 through Ollama.
-AI gives match score based on your skills.
-Email the final job analysis to you.
+1. Pick top job links.
+2. Send those jobs to local AI model phi3 through Ollama.
+3. AI gives match score based on your skills.
+4. Email the final job analysis to you.
 
 Main flow starts from job_agent.py (line 56).
 
