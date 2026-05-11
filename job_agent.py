@@ -4,8 +4,9 @@ from main import ask_ai, llm
 
 def start_hunting():
     # User Preferences
-    my_skills = "PHP, Laravel, MySQL, JavaScript, React.js, REST APIs"
-    role_to_search = "PHP Laravel Developer"
+    my_skills = "Python, Generative AI, LLMs, RAG, Agentic AI, AI Agents, LangChain, LangGraph, Prompt Engineering, Vector Databases, AI Automation, MCP, Ollama, FastAPI, Machine Learning, NLP, REST APIs, PHP, Laravel, MySQL, JavaScript, React.js"
+    # role_to_search = "AI Engineer | Generative AI Engineer | Python Developer | Laravel Developer | LLMs & RAG"
+    role_to_search = "Generative AI Engineer"
     location = "India"
 
     print(f"--- Starting Hunt for {role_to_search} in {location} ---")
@@ -16,7 +17,7 @@ def start_hunting():
     # 2. Agar abhi bhi nahi mili, toh 'React' keyword se try karein (Secondary fallback)
     if not found_jobs:
         print("Initial search failed, trying alternative skill search...")
-        found_jobs = scraper.get_job_links("React Developer PHP", location)
+        found_jobs = scraper.get_job_links("AI/ML Engineer", location)
 
     if not found_jobs:
         print("No jobs found even with broad search. Check LinkedIn URL manually.")

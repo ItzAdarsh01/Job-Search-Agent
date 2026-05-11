@@ -1,6 +1,10 @@
 import smtplib
+import os
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def send_job_email(job_analysis):
     sender_email = "kas0adarsh404@gmail.com"
@@ -10,7 +14,10 @@ def send_job_email(job_analysis):
         "adarsh171101@gmail.com",
     ]
     
-    app_password = "hldoioymakidsqex"
+    app_password = os.getenv("GMAIL_APP_PASSWORD")
+    if not app_password:
+        print("\n Email Error: GMAIL_APP_PASSWORD is missing in .env")
+        return
 
     # Email Header
     message = MIMEMultipart()

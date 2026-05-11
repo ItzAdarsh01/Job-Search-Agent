@@ -13,7 +13,7 @@ def ask_ai(prompt):
         print(chunk, end="", flush=True)
     print("\n")
 
-# 3. Test karein
+# 3. Test 
 if __name__ == "__main__":
-    user_input = "Hii, I am a full stack developer in php, laravel, react.js. help me find the jobs?"
+    user_input = "Hi, I am an AI Engineer and Python Developer specializing in Generative AI, LLMs, RAG, Agentic AI, and AI-powered applications. I am currently looking for opportunities in AI Engineering, GenAI, and AI Automation.Can you suggest some job roles that would be a good fit for my skills and experience?"
     ask_ai(user_input)

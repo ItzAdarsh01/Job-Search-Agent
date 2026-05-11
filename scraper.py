@@ -16,7 +16,7 @@ def get_job_links(role, location):
         context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0 Safari/537.36")
         page = context.new_page()
         
-        print(f"Direct LinkedIn search shuru kar raha hu: {role} in {location}...")
+        print(f"Direct LinkedIn search getting started: {role} in {location}...")
         
         try:
             page.goto(url, wait_until="networkidle")
